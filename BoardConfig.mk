@@ -118,7 +118,7 @@ DEVICE_MANIFEST_FILE += \
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/custom/config/BoardConfigReservedSize.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
@@ -167,7 +167,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2026-04-16
 
 # SELinux
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/custom/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
